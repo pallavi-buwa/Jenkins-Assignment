@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build'){
             steps{
-                make 
-                ./a.out
+                sh "make"
             }
         }
     }
